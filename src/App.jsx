@@ -69,20 +69,14 @@ function App() {
       </Section>
       <Section title="Sistem Tata Negara" align="right">
         <div className="pr-8 grid grid-cols-2 gap-4">
-          <Card
-            img={{ src: "src/assets/img/sistem-sebelum.png" }}
-            title="Sebelum"
-          >
+          <Card img={{ src: "img/sistem-sebelum.png" }} title="Sebelum">
             <p className="text-justify">
               Dewan Pertimbangan Agung (DPA) dibentuk berdasarkan undang-undang
               yang ditetapkan, dengan tugas dan fungsi memberikan jawab atas
               pertanyaan Presiden dan berhak memajukan usul kepada pemerintah.
             </p>
           </Card>
-          <Card
-            img={{ src: "src/assets/img/sistem-sesudah.png" }}
-            title="Sesudah"
-          >
+          <Card img={{ src: "img/sistem-sesudah.png" }} title="Sesudah">
             <ul className="text-justify list-disc pl-4">
               <li>Fungsi Legislatif dilaksanakan oleh MPR, DPR dan DPD.</li>
               <li>

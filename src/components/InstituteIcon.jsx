@@ -23,14 +23,10 @@ export default function InstituteIcon() {
       initial="init"
       animate="appear"
     >
-      <img
-        src="src/assets/img/smansa.webp"
-        alt="SMAN 1 Malang"
-        className="h-8 md:h-12"
-      />
+      <img src="img/smansa.webp" alt="SMAN 1 Malang" className="h-8 md:h-12" />
       <div className="h-8 md:h-12 overflow-hidden">
         <img
-          src="src/assets/img/kurikulum-merdeka.webp"
+          src="img/kurikulum-merdeka.webp"
           alt="Kurikulum Merdeka"
           className="object-cover h-full scale-[1.3] md:scale-[1.4]"
         />
