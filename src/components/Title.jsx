@@ -18,7 +18,7 @@ const variants = {
 export default function Title() {
   return (
     <motion.div
-      className="text-6xl md:text-8xl"
+      className="text-5xl md:text-8xl"
       variants={variants}
       initial="init"
       animate="appear"

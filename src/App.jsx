@@ -18,44 +18,48 @@ function App() {
           1945 merupakan sumber hukum tertinggi di Indonesia dan menjadi
           perwujudan dari ideologi negara, yaitu Pancasila.
         </SlideParagraph>
+        {/* <aside className="bg-blue-500">hello wolrd</aside> */}
       </Section>
       <Section title="Amandemen" align="right">
-        <SlideParagraph from="right">
-          Amandemen UUD 1945 adalah proses perubahan atau perbaikan terhadap
-          Undang-Undang Dasar 1945 (UUD 1945) sebagai dasar negara Indonesia.
-          Amandemen dilakukan untuk menyempurnakan UUD 1945, bukan menggantinya.
-          Amandemen UUD 1945 telah dilakukan sebanyak empat kali pada tahun 1999
-          - 2002: Amandemen I pada 19 Oktober 1999, Amandemen II pada 18 Agustus
-          2000, Amandemen III pada 10 November 2001, Amandemen IV pada 10
-          Agustus 2002.
-        </SlideParagraph>
-        <Accordion
-          content={{
-            "Amandemen 1": ["Pengurangan masa jabatan presiden"],
-            "Amandemen 2": [
-              "Hak otonomi daerah",
-              "Meningkatkan pemerintahan daerah, DPR, dan kewenangannya",
-              "Hak asasi manusia",
-              "Lambang negara",
-            ],
-            "Amandemen 3": [
-              "Bentuk dan kedaulatan negara",
-              "Kewenangan MPR",
-              "Kepresidenan",
-              "Keuangan negara",
-              "Kekuasaan kehakiman",
-            ],
-            "Amandemen 4": [
-              "DPR sebagai bagian dari MPR",
-              "Mata uang",
-              "Bank sentral",
-              "Pendidikan kebudayaan",
-              "Perekonomian nasional",
-              "Kesejahteraan sosial",
-            ],
-          }}
-          className="mt-8"
-        />
+        <aside></aside>
+        <div>
+          <SlideParagraph from="right">
+            Amandemen UUD 1945 adalah proses perubahan atau perbaikan terhadap
+            Undang-Undang Dasar 1945 (UUD 1945) sebagai dasar negara Indonesia.
+            Amandemen dilakukan untuk menyempurnakan UUD 1945, bukan
+            menggantinya. Amandemen UUD 1945 telah dilakukan sebanyak empat kali
+            pada tahun 1999 - 2002: Amandemen I pada 19 Oktober 1999, Amandemen
+            II pada 18 Agustus 2000, Amandemen III pada 10 November 2001,
+            Amandemen IV pada 10 Agustus 2002.
+          </SlideParagraph>
+          <Accordion
+            content={{
+              "Amandemen 1": ["Pengurangan masa jabatan presiden"],
+              "Amandemen 2": [
+                "Hak otonomi daerah",
+                "Meningkatkan pemerintahan daerah, DPR, dan kewenangannya",
+                "Hak asasi manusia",
+                "Lambang negara",
+              ],
+              "Amandemen 3": [
+                "Bentuk dan kedaulatan negara",
+                "Kewenangan MPR",
+                "Kepresidenan",
+                "Keuangan negara",
+                "Kekuasaan kehakiman",
+              ],
+              "Amandemen 4": [
+                "DPR sebagai bagian dari MPR",
+                "Mata uang",
+                "Bank sentral",
+                "Pendidikan kebudayaan",
+                "Perekonomian nasional",
+                "Kesejahteraan sosial",
+              ],
+            }}
+            className="mt-8"
+          />
+        </div>
       </Section>
       <Section title="Sistematika">
         <Accordion
@@ -68,7 +72,8 @@ function App() {
         />
       </Section>
       <Section title="Sistem Tata Negara" align="right">
-        <div className="pr-8 grid grid-cols-2 gap-4">
+        <aside></aside>
+        <div className="lg:pr-8 grid max-lg:grid-rows-2 lg:grid-cols-2 gap-4">
           <Card img={{ src: "img/sistem-sebelum.png" }} title="Sebelum">
             <p className="text-justify">
               Dewan Pertimbangan Agung (DPA) dibentuk berdasarkan undang-undang

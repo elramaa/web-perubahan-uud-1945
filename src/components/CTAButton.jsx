@@ -19,7 +19,7 @@ const variants = {
 export default function CTAButton() {
   return (
     <motion.div
-      className="w-max absolute bottom-12 left-1/2 -translate-x-1/2 bg-cream rounded-full px-8 py-4 font-semibold text-lightbrick flex gap-2 items-center"
+      className="w-max absolute bottom-20 lg:bottom-12 left-1/2 -translate-x-1/2 bg-cream rounded-full px-8 py-4 font-semibold text-lightbrick flex gap-2 items-center"
       variants={variants}
       initial="init"
       whileInView="jump"

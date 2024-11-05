@@ -18,7 +18,7 @@ const variants = {
 export default function InstituteIcon() {
   return (
     <motion.div
-      className="absolute top-8 left-1/2 -translate-x-1/2 bg-white rounded-full flex px-8 py-4 gap-8"
+      className="absolute top-4 lg:top-8 left-1/2 -translate-x-1/2 bg-white rounded-full flex px-8 py-4 gap-8"
       variants={variants}
       initial="init"
       animate="appear"

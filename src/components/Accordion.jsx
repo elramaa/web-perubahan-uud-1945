@@ -11,7 +11,7 @@ const accordionItemVariants = {
 export default function Accordion({ content, className }) {
   const [openedID, setOpenedID] = useState(-1);
   return (
-    <motion.ul layoutRoot className={`w-4/5 text-cream ${className}`}>
+    <motion.ul layoutRoot className={`w-full lg:w-4/5 text-cream ${className}`}>
       {Object.entries(content).map(([key, value], i) => (
         <motion.li
           key={key}

@@ -2,10 +2,21 @@ import { motion } from "framer-motion";
 
 const variants = {
   svg: {
-    init: {},
+    init: (from) =>
+      from == "left"
+        ? {
+            x: -100,
+            y: -100,
+          }
+        : from == "right"
+        ? { x: 100, y: 100 }
+        : {},
     appear: {
+      x: 0,
+      y: 0,
       transition: {
-        duration: 1,
+        type: "tween",
+        when: "beforeChildren",
         staggerChildren: 0.05,
       },
     },
@@ -18,12 +29,15 @@ const variants = {
     appear: {
       opacity: 1,
       pathLength: 1,
-      transition: {},
+      transition: {
+        duration: 0.2,
+        type: "tween",
+      },
     },
   },
 };
 
-export default function Flag({ style, className }) {
+export default function Flag({ style, className, from = "left" }) {
   return (
     <motion.svg
       viewBox="0 0 1102 738"
@@ -32,6 +46,7 @@ export default function Flag({ style, className }) {
       className={className}
       style={style}
       variants={variants.svg}
+      custom={from}
       initial="init"
       animate="appear"
     >
