@@ -1,5 +1,6 @@
 // import { useScroll } from "framer-motion";
 import Accordion from "./components/Accordion";
+import AnimatedList from "./components/AnimatedList";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -94,6 +95,30 @@ function App() {
             </ul>
           </Card>
         </div>
+      </Section>
+      <Section title="Faktor Amandemen">
+        <div>
+          <p className="font-semibold">
+            Beberapa faktor utama dilakukannya amandemen atas UUD 1945 adalah:
+          </p>
+          <AnimatedList
+            items={[
+              "Kurangnya sistem cek dan keseimbangan pada institusi-institusi pemerintahan.",
+              "Dominasi kekuasaan eksekutif yang terlalu kuat, dengan hak prerogatif dan kekuasaan legislatif yang terlalu besar di tangan Presiden.",
+              "Pasal 7 UUD 1945 sebelum amandemen terlalu fleksibel.",
+              "Terbatasnya pengaturan jaminan hak asasi manusia (HAM).",
+            ]}
+          />
+          <SlideParagraph>
+            Oleh karena itu, tujuan dari amandemen UUD 1945 yang dilakukan
+            sebanyak 4 kali ini adalah untuk menyempurnakan aturan-aturan dasar
+            negara seperti tatanan negara, kedaulatan rakyat, hak asasi manusia,
+            pembagian kekuasaan, eksistensi negara demokrasi dan negara hukum,
+            serta hal-hal lain yang sesuai dengan perkembangan aspirasi dan
+            kebutuhan bangsa.
+          </SlideParagraph>
+        </div>
+        <aside></aside>
       </Section>
       <Footer />
     </div>
